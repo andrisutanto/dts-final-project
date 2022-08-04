@@ -10,6 +10,8 @@ const Login = () => {
         password:''
     });
 
+    const logo = require('../logo.png'); 
+
     const onChangeInput = (e) => {
         setFormData({
             ...formData,
@@ -41,7 +43,8 @@ const Login = () => {
         <div className="wrapper">
             <header className="page-header">
                 <nav>
-                <h2 className="logo">LOGO</h2>
+                {/* <h2 className="logo">LOGO</h2> */}
+                <img className="logo" src={logo} />
                 <div className="cta-contact"><Link to="/signup">Sign Up</Link></div>
                 </nav>
             </header>
@@ -74,7 +77,7 @@ const Login = () => {
 
             </main>
             <footer className="page-footer">
-                <small>Andri Sutanto</small>
+                <small className='textfooter'>Andri Sutanto</small>
             </footer>
             </div>
 

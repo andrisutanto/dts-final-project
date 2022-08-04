@@ -144,12 +144,12 @@ button.logout:hover,
 
 @import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
 
-:root {
+/* :root {
   --main-white-color: #f2f2f2;
   --main-black-color: black;
   --main-purple-color: #9e89b8;
 }
-
+ */
 
   
 
@@ -197,7 +197,7 @@ body {
 /* HEADER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-header {
-  background: var(--main-white-color);
+  background: azure;
 }
 .page-header nav {
   display: flex;
@@ -220,9 +220,11 @@ body {
 .page-header .cta-contact {
   font-family: inherit;
   font-size: 1.2rem;
+  color: white;
   padding: 5px 18px;
-  border: 1px solid;
-  border-radius: 5px;
+  /* border: 1px solid; */
+  border-radius: 3px;
+  background-color: crimson;
 }
 
 
@@ -254,13 +256,18 @@ body {
   margin-top: 10px;
 }
 
+/* LOGO */
+.logo {
+  height: 50px;
+}
+
 
 /* FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
   display: flex;
   flex-direction: column-reverse;
-  background: var(--main-white-color);
+  background: #253468;
 }
 
 .page-footer ul {
@@ -271,6 +278,10 @@ body {
 
 .page-footer ul li:not(:last-child) {
   margin-right: 20px;
+}
+
+.textfooter {
+  color: white;
 }
 
 
