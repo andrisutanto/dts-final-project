@@ -43,7 +43,7 @@ const Login = () => {
         <div className="wrapper">
             <header className="page-header">
                 <nav>
-                <img className="logo" src={logo} alt="image"/>
+                <img className="logo" src={logo} alt="logo"/>
                 <div className="cta-contact"><Link to="/signup">Sign Up</Link></div>
                 </nav>
             </header>
