@@ -53,22 +53,20 @@ const Login = () => {
             <div className="row">
             <div className="columnsplit">
                 <div>
-                    <h1>Hi F1 Fans!</h1>
-                    <h2>Dapatkan informasi dan gosip terkini mengenai Formula 1</h2>
-                    <h3>Silahkan daftar atau login untuk melanjutkan.</h3>
+                    <h1>Hi F1 Mania!</h1>
+                    <h2>Dapatkan informasi dan gosip terkini mengenai Formula 1. Silahkan daftar atau login untuk melanjutkan.</h2>
                 </div>
             </div>
             <div className="columnsplit">
-                <div>
+                <div className="myform">
                     <h1>Login</h1>
                     <form onSubmit={submitForm}>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" name="email" onChange={onChangeInput} placeholder="Your email" id="email" value={formData.email} required />
+                        <input type="email" name="email" onChange={onChangeInput} placeholder="Masukkan Email" id="email" value={formData.email} required />
                         <label htmlFor="password">Password:</label>
-                        <input type="password" name="password" onChange={onChangeInput} placeholder="New password" id="password" value={formData.password} required />
+                        <input type="password" name="password" onChange={onChangeInput} placeholder="Masukkan Password" id="password" value={formData.password} required />
                         {errMsg && <div className="err-msg">{errMsg}</div>}
                         {redirect ? redirect : <button type="submit" disabled={wait}>Login</button>}
-                        
                     </form>
                 </div>
             </div>
@@ -76,7 +74,7 @@ const Login = () => {
 
             </main>
             <footer className="page-footer">
-                <small className='textfooter'>Andri Sutanto</small>
+                <small className='textfooter'>© 2022 - Andri Sutanto</small>
             </footer>
             </div>
 
